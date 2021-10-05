@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-3 py-2 text-sm font-medium rounded-md shadow-md cursor-pointer;
+  }
+  .btn-header-nav {
+    @apply bg-yellow-400 hover:bg-yellow-300 md:mx-3 md:inline-block md:my-0 my-3;
+  }
+  .container {
+    @apply p-3 text-center mx-auto;
+  }
+}
+
+@layer utilities {
+  .scroll-snap-none {
+    scroll-snap-type: none;
+  }
+  .scroll-snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-snap-y {
+    scroll-snap-type: y;
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "routines": [
+    {
+      "title": "HIIT for Him",
+      "type": "Push",
+      "routine_id": "1",
+      "image": "/images/dumbells.jpg",
+      "workouts": [
+        {
+          "ref": 1,
+          "name": "Handstand pushups",
+          "image": "/images/hspu.jpeg",
+          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 1
+        },
+        {
+          "ref": 2,
+          "name": "Ring Dips",
+          "image": "/images/ringdips.jpg",
+          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 2
+        },
+        {
+          "ref": 3,
+          "name": "Ring Pushups",
+          "image": "/images/ring_pushups.jpeg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 3
+        }
+      ]
+    },
+
+    {
+      "title": "Upperbody Evolution",
+      "type": "Upperbody",
+      "routine_id": "2",
+      "image": "/images/dumbells.jpg",
+      "workouts": [
+        {
+          "ref": 4,
+          "name": "Handstand pushups",
+          "image": "/images/hspu.jpeg",
+          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 1
+        },
+        {
+          "ref": 5,
+          "name": "Frontlever raises",
+          "image": "/images/frontlever.jpeg",
+          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 2
+        },
+        {
+          "ref": 6,
+          "name": "Ring Pushups",
+          "image": "/images/ring_pushups.jpeg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 3
+        },
+        {
+          "ref": 7,
+          "name": "Pull ups",
+          "image": "/images/pullup1.jpg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 4
+        }
+      ]
+    },
+    {
+      "title": "Pullday Routine!!",
+      "type": "pullday",
+      "routine_id": 3,
+      "id": "today",
+      "image": "/images/dumbells.jpg",
+      "workouts": [
+        {
+          "name": "Frontlever Raises",
+          "image": "/images/frontlever.jpeg",
+          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 1
+        },
+        {
+          "name": "Pull ups",
+          "image": "/images/pullup1.jpg",
+          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 2
+        },
+        {
+          "name": "Bicep curls",
+          "image": "/images/bicepcurls.jpeg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 3
+        }
+      ]
+    }
+  ],
+
+  "workout": [
+    {
+      "name": "Handstand pushups",
+      "image": "/images/hspu.jpeg",
+      "category": ["push"],
+      "muscle": ["tricep", "sidedelts", "frontdelts"],
+      "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+      "videoAdv": "/videos/swordraise.mp4",
+      "videoInter": "video link",
+      "videoBeg": "video link",
+      "id": 1
+    },
+    {
+      "name": "Ring Dips",
+      "image": "/images/ringdips.jpg",
+      "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "videoAdv": "/videos/ringdip1.mp4",
+      "videoInter": "video link",
+      "videoBeg": "video link",
+      "id": 2
+    },
+    {
+      "name": "Ring Pushups",
+      "image": "/images/ring_pushups.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "videoAdv": "/videos/chinup.mp4",
+      "videoInter": "video link",
+      "videoBeg": "video link",
+      "id": 3
+    }
+  ]
+}
