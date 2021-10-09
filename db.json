@@ -8,6 +8,7 @@
       "workouts": [
         {
           "ref": 1,
+          "level": "advanced",
           "name": "Handstand pushups",
           "image": "/images/hspu.jpeg",
           "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
@@ -18,6 +19,7 @@
         },
         {
           "ref": 2,
+          "level": "advanced",
           "name": "Ring Dips",
           "image": "/images/ringdips.jpg",
           "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
@@ -28,7 +30,75 @@
         },
         {
           "ref": 3,
+          "level": "advanced",
           "name": "Ring Pushups",
+          "image": "/images/ring_pushups.jpeg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 3
+        },
+
+        {
+          "ref": 4,
+          "level": "intermediate",
+          "name": "elevated pike pushup",
+          "image": "/images/hspu.jpeg",
+          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 1
+        },
+        {
+          "ref": 5,
+          "level": "intermediate",
+          "name": "Dips",
+          "image": "/images/ringdips.jpg",
+          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 2
+        },
+        {
+          "ref": 6,
+          "level": "intermediate",
+          "name": "Pushups",
+          "image": "/images/ring_pushups.jpeg",
+          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 3
+        },
+        {
+          "ref": 7,
+          "level": "begginer",
+          "name": "pike pushups",
+          "image": "/images/hspu.jpeg",
+          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 1
+        },
+        {
+          "ref": 8,
+          "level": "begginer",
+          "name": "bench dips",
+          "image": "/images/ringdips.jpg",
+          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+          "videoAdv": "/videos/ringdip1.mp4",
+          "videoInter": "video link",
+          "videoBeg": "video link",
+          "id": 2
+        },
+        {
+          "ref": 9,
+          "level": "begginer",
+          "name": "inclined pushups",
           "image": "/images/ring_pushups.jpeg",
           "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
           "videoAdv": "/videos/ringdip1.mp4",
@@ -132,33 +202,78 @@
 
   "workout": [
     {
+      "id": 1,
       "name": "Handstand pushups",
       "image": "/images/hspu.jpeg",
       "category": ["push"],
       "muscle": ["tricep", "sidedelts", "frontdelts"],
-      "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-      "videoAdv": "/videos/swordraise.mp4",
-      "videoInter": "video link",
-      "videoBeg": "video link",
-      "id": 1
+      "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+      "level": "advanced",
+      "video": "/videos/reardeltrows.mp4"
     },
     {
+      "id": 2,
       "name": "Ring Dips",
       "image": "/images/ringdips.jpg",
       "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "videoAdv": "/videos/ringdip1.mp4",
-      "videoInter": "video link",
-      "videoBeg": "video link",
-      "id": 2
+      "level": "advanced",
+      "video": "/videos/chinup.mp4"
     },
     {
+      "id": 3,
       "name": "Ring Pushups",
       "image": "/images/ring_pushups.jpeg",
       "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "videoAdv": "/videos/chinup.mp4",
-      "videoInter": "video link",
-      "videoBeg": "video link",
-      "id": 3
+      "level": "advanced",
+      "video": "/videos/ringdip1.mp4"
+    },
+    {
+      "id": 4,
+      "name": "Spartan chopups",
+      "image": "/images/abs.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "intermediate",
+      "video": "/videos/chinup.mp4"
+    },
+    {
+      "id": 5,
+      "name": "Freak jobs",
+      "image": "/images/bicepcurls.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "intermediate",
+      "video": "/videos/swordraise.mp4"
+    },
+    {
+      "id": 6,
+      "name": "Muscle EVR",
+      "image": "/images/frontlever.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "intermediate",
+      "video": "/videos/swordraise.mp4"
+    },
+    {
+      "id": 7,
+      "name": "Connect Cutter",
+      "image": "/images/pushup.jpg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "begginer",
+      "video": "/videos/ringdip1.mp4"
+    },
+    {
+      "id": 8,
+      "name": "V executer",
+      "image": "/images/ringdips.jpg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "begginer",
+      "video": "/videos/ringdip1.mp4"
+    },
+    {
+      "id": 9,
+      "name": "Final answer",
+      "image": "/images/chest.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "begginer",
+      "video": "/videos/ringdip1.mp4"
     }
   ]
 }

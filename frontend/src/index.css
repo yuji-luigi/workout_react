@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  h1 {
+    @apply font-bold text-xl mx-3;
+  }
   .btn {
     @apply px-3 py-2 text-sm font-medium rounded-md shadow-md cursor-pointer;
   }
@@ -23,5 +26,11 @@
   }
   .scroll-snap-y {
     scroll-snap-type: y;
+  }
+  .v-screen-half {
+    height: 50vh;
+  }
+  .w-screen-half {
+    width: 50vw;
   }
 }

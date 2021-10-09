@@ -9,3 +9,12 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// const array1 = [];
+// const array2 = [{ a: "fhjiu" }, { b: "nai" }, { c: "nrqo" }];
+
+// array2.forEach((obj) => {
+//   array1.push(obj);
+// });
+
+// console.log(array1);

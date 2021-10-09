@@ -20,16 +20,16 @@ const Header = () => {
           <div className="md:block md:static md:mx-3 relative mr-3">
             <button
               onClick={() => toggle(!on)}
-              className="btn md:hidden bg-yellow-200 hover:bg-yellow-100"
+              className="btn md:hidden bg-green-300 hover:bg-green-200"
             >
               <FontAwesomeIcon icon={on ? faChevronUp : faEllipsisH} />
             </button>
             <ul
               className={`sm:border sm:bg md:static absolute right-1 md:block ${
                 on ? "block" : "hidden"
-              }`}
+              } z-10`}
             >
-              <li className=" btn btn-header-nav">logout</li>
+              <li className=" btn btn-header-nav">Logout</li>
               <li className=" btn btn-header-nav">Your workout</li>
               <li className=" btn btn-header-nav">Account</li>
             </ul>
