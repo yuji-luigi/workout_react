@@ -5,45 +5,62 @@ import DifficultyButtons from "./DifficultyButtons";
 import Clip from "./Clip";
 
 const SingleWorkout = () => {
-  const { id } = useParams();
-
+  let { workout_id, levelSelected } = useParams();
   const [workout, setWorkout] = useState("");
-  const [level, setLevel] = useState("begginer");
+  const [level, setLevel] = useState(levelSelected);
 
   useEffect(() => {
-    const getSingleWorkout = async () => {
-      const singleWorkoutFromServer = await fetchSingleWorkout();
-      setWorkout(singleWorkoutFromServer);
+    const getSingleWorkout = async (ref) => {
+      const oneTypeOfWorkoutFromServer = await fetchOneTypeOfWorkout(ref);
+      const [targetWorkout] =
+        oneTypeOfWorkoutFromServer.variation_byLevel.filter((key) => {
+          return key.level === level;
+        });
+      console.log(targetWorkout);
+      setWorkout(targetWorkout);
     };
-    getSingleWorkout();
+    getSingleWorkout(workout_id);
   }, [level]);
+
+  // useEffect(() => {
+  //   const switchWorkoutByLevel = async (ref) => {
+  //     const oneTypeOfWorkoutFromServer = await fetchOneTypeOfWorkout(ref);
+  //     setWorkout(oneTypeOfWorkoutFromServer);
+  //   };
+
+  //   changeWorkoutIdBylevel();
+  //   switchWorkoutByLevel(workout_id);
+  // }, [level]);
 
   const changeLevel = (difficluty) => {
     setLevel(difficluty);
   };
-
-  const fetchSingleWorkout = async () => {
-    const res = await fetch(`http://localhost:4000/workout?id=${id}`);
-    const [data] = await res.json();
-    return data;
+  const fetchOneTypeOfWorkout = async (ref) => {
+    try {
+      const res = await fetch(`http://localhost:4000/workouts?id=${ref}`);
+      const [data] = await res.json();
+      return data;
+    } catch (e) {
+      console.log(e);
+    }
   };
+  // const changeWorkoutIdBylevel = () => {
+  //   switch (level) {
+  //     case "begginer":
+  //       workout_id = workout.begginer;
+  //       break;
 
-  let video;
-  switch (level) {
-    case "begginer":
-      video = workout.videoBeg;
-      break;
+  //     case "intermediate":
+  //       workout_id = workout.intermediate;
+  //       break;
 
-    case "intermediate":
-      video = workout.videoInter;
-      break;
-
-    case "expert":
-      video = workout.videoAdv;
-      break;
-    default:
-      video = null;
-  }
+  //     case "expert":
+  //       workout_id = workout.advanced;
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
 
   return (
     <div className="container ">
@@ -53,13 +70,12 @@ const SingleWorkout = () => {
       >
         Back
       </button>
-
       <DifficultyButtons changeLevel={changeLevel} />
 
       <>
         <div className="  flex flex-col justyfy-center">
           <h1 className="mb-3">{workout.name}</h1>
-          <h1 className="uppercase">{level}</h1>
+          <h1 className="uppercase">{workout.level}</h1>
           <p>{workout.description}</p>
           <Clip video={workout.video} />
         </div>

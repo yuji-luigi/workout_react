@@ -1,3 +1,6 @@
+// Refactor the DB @ Routinepa.js 38 39
+// Difficulty Button default style(selected) in Routinepage
+
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -100,7 +103,7 @@ function App() {
         <Route path="/routines/:routine_id" exact>
           <RoutinePage />
         </Route>
-        <Route path="/workout/:id" exact>
+        <Route path="/workout/:workout_id/:levelSelected" exact>
           <SingleWorkout />
         </Route>
         <Route path="/routines/" exact>

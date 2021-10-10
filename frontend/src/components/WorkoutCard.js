@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
-const WorkoutCard = ({ workout }) => {
+const WorkoutCard = ({ workout, workoutIds, level }) => {
   return (
     <>
-      <Link to={`/workout/${workout.id}`}>
+      <Link to={`/workout/${workoutIds}/${level}`}>
         <div
           title="Show detail"
           className="bg-white flex  m-3 py-3 rounded-lg cursor-pointer"

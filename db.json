@@ -7,104 +7,13 @@
       "image": "/images/dumbells.jpg",
       "workouts": [
         {
-          "ref": 1,
-          "level": "advanced",
-          "name": "Handstand pushups",
-          "image": "/images/hspu.jpeg",
-          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 1
+          "ref": 1
         },
         {
-          "ref": 2,
-          "level": "advanced",
-          "name": "Ring Dips",
-          "image": "/images/ringdips.jpg",
-          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 2
+          "ref": 2
         },
         {
-          "ref": 3,
-          "level": "advanced",
-          "name": "Ring Pushups",
-          "image": "/images/ring_pushups.jpeg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 3
-        },
-
-        {
-          "ref": 4,
-          "level": "intermediate",
-          "name": "elevated pike pushup",
-          "image": "/images/hspu.jpeg",
-          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 1
-        },
-        {
-          "ref": 5,
-          "level": "intermediate",
-          "name": "Dips",
-          "image": "/images/ringdips.jpg",
-          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 2
-        },
-        {
-          "ref": 6,
-          "level": "intermediate",
-          "name": "Pushups",
-          "image": "/images/ring_pushups.jpeg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 3
-        },
-        {
-          "ref": 7,
-          "level": "begginer",
-          "name": "pike pushups",
-          "image": "/images/hspu.jpeg",
-          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 1
-        },
-        {
-          "ref": 8,
-          "level": "begginer",
-          "name": "bench dips",
-          "image": "/images/ringdips.jpg",
-          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 2
-        },
-        {
-          "ref": 9,
-          "level": "begginer",
-          "name": "inclined pushups",
-          "image": "/images/ring_pushups.jpeg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 3
+          "ref": 3
         }
       ]
     },
@@ -116,46 +25,13 @@
       "image": "/images/dumbells.jpg",
       "workouts": [
         {
-          "ref": 4,
-          "name": "Handstand pushups",
-          "image": "/images/hspu.jpeg",
-          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 1
+          "ref": 4
         },
         {
-          "ref": 5,
-          "name": "Frontlever raises",
-          "image": "/images/frontlever.jpeg",
-          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 2
+          "ref": 5
         },
         {
-          "ref": 6,
-          "name": "Ring Pushups",
-          "image": "/images/ring_pushups.jpeg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 3
-        },
-        {
-          "ref": 7,
-          "name": "Pull ups",
-          "image": "/images/pullup1.jpg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 4
+          "ref": 6
         }
       ]
     },
@@ -167,65 +43,297 @@
       "image": "/images/dumbells.jpg",
       "workouts": [
         {
-          "name": "Frontlever Raises",
-          "image": "/images/frontlever.jpeg",
-          "description": "For strength so aim for 3 to 5 reps at 8 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 1
+          "ref": 7
         },
         {
-          "name": "Pull ups",
-          "image": "/images/pullup1.jpg",
-          "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 2
+          "ref": 8
         },
         {
-          "name": "Bicep curls",
-          "image": "/images/bicepcurls.jpeg",
-          "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-          "videoAdv": "/videos/ringdip1.mp4",
-
-          "videoInter": "video link",
-          "videoBeg": "video link",
-          "id": 3
+          "ref": 9
         }
       ]
     }
   ],
 
-  "workout": [
+  "workouts": [
     {
       "id": 1,
-      "name": "Handstand pushups",
+      "name": "Overhead Press",
+      "keyword": [
+        "handstand pushups",
+        "elevated pikepushups",
+        "pikepushups",
+        "overhead press"
+      ],
       "image": "/images/hspu.jpeg",
       "category": ["push"],
       "muscle": ["tricep", "sidedelts", "frontdelts"],
       "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
       "level": "advanced",
-      "video": "/videos/reardeltrows.mp4"
+      "video": "/videos/reardeltrows.mp4",
+      "begginer": 4,
+      "intermediate": 7,
+      "advanced": 1,
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "handstand pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Elevatet Pike Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Pike Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "Ring Dips",
+      "name": "Dips",
       "image": "/images/ringdips.jpg",
       "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
       "level": "advanced",
-      "video": "/videos/chinup.mp4"
+      "video": "/videos/chinup.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "Ripg dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Bench dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
     },
     {
       "id": 3,
+      "name": "Pushups",
+      "image": "/images/ring_pushups.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "advanced",
+      "video": "/videos/ringdip1.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "Ring pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Elevated Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Front lever raise",
+      "keyword": [
+        "handstand pushups",
+        "elevated pikepushups",
+        "pikepushups",
+        "overhead press"
+      ],
+      "image": "/images/hspu.jpeg",
+      "category": ["pull"],
+      "muscle": ["lats", " back"],
+      "description": "Hit lats!!",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "frontlever raise",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "tuck-frontlever raise",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Straight arm pull",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pull up",
+      "image": "/images/ringdips.jpg",
+      "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "video": "/videos/chinup.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "pull ups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "body rows",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "body rows",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 6,
       "name": "Ring Pushups",
       "image": "/images/ring_pushups.jpeg",
       "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
       "level": "advanced",
-      "video": "/videos/ringdip1.mp4"
+      "video": "/videos/ringdip1.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "Ring pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Elevated Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Overhead Press",
+      "keyword": [
+        "handstand pushups",
+        "elevated pikepushups",
+        "pikepushups",
+        "overhead press"
+      ],
+      "image": "/images/hspu.jpeg",
+      "category": ["push"],
+      "muscle": ["tricep", "sidedelts", "frontdelts"],
+      "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+      "level": "advanced",
+      "video": "/videos/reardeltrows.mp4",
+      "begginer": 4,
+      "intermediate": 7,
+      "advanced": 1,
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "handstand pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Elevatet Pike Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Pike Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dips",
+      "image": "/images/ringdips.jpg",
+      "description": "For Strength-wised-Hypertrophy so aim for 6 to 8 reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "advanced",
+      "video": "/videos/chinup.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "Ripg dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Bench dips",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ring Pushups",
+      "image": "/images/ring_pushups.jpeg",
+      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
+      "level": "advanced",
+      "video": "/videos/ringdip1.mp4",
+      "variation_byLevel": [
+        {
+          "level": "advanced",
+          "name": "Ring pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/reardeltrows.mp4"
+        },
+        {
+          "level": "intermediate",
+          "name": "Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/swordraise.mp4"
+        },
+        {
+          "level": "begginer",
+          "name": "Elevated Pushups",
+          "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
+          "video": "/videos/chinup.mp4"
+        }
+      ]
     },
     {
       "id": 4,

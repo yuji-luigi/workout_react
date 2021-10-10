@@ -2,7 +2,7 @@ import React from "react";
 
 import WorkoutCard from "./WorkoutCard";
 
-const WorkoutList = ({ workouts }) => {
+const WorkoutList = ({ workouts, workoutIds, level }) => {
   return (
     <>
       <div className="flex justify-center flex-col ">
@@ -10,7 +10,12 @@ const WorkoutList = ({ workouts }) => {
         <h4>Start Workout!!</h4>
       </div>
       {workouts.map((workout, index) => (
-        <WorkoutCard key={index} workout={workout} />
+        <WorkoutCard
+          key={index}
+          level={level}
+          workout={workout.targetWorkout}
+          workoutIds={workout.id}
+        />
       ))}
     </>
   );
