@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "npm run bill",
+    "start": "concurrently \"npm run server\" \"node index.js\"",
     "server": "json-server --watch db.json -p 4000",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
