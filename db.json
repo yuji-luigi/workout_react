@@ -79,19 +79,34 @@
           "level": "advanced",
           "name": "handstand pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 4,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/hspu.jpeg"
         },
         {
           "level": "intermediate",
           "name": "Elevatet Pike Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/pike2.png"
         },
         {
           "level": "begginer",
           "name": "Pike Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/pike2.png"
         }
       ]
     },
@@ -107,19 +122,34 @@
           "level": "advanced",
           "name": "Ripg dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 3,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/ringdips.jpg"
         },
         {
           "level": "intermediate",
           "name": "Dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/dips.png"
         },
         {
           "level": "begginer",
           "name": "Bench dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/benchdip.jpeg"
         }
       ]
     },
@@ -135,19 +165,34 @@
           "level": "advanced",
           "name": "Ring pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/ringdip1.mp4",
+          "sets": 3,
+          "reps": 10,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/ring_pushups.jpeg"
         },
         {
           "level": "intermediate",
           "name": "Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/pushups.jpeg"
         },
         {
           "level": "begginer",
           "name": "Elevated Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/incline-push-up.jpeg"
         }
       ]
     },
@@ -169,19 +214,34 @@
           "level": "advanced",
           "name": "frontlever raise",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/frontlever.jpeg"
         },
         {
           "level": "intermediate",
           "name": "tuck-frontlever raise",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/tuck-front-lever-smalljpeg"
         },
         {
           "level": "begginer",
           "name": "Straight arm pull",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/stpull.jpeg"
         }
       ]
     },
@@ -196,19 +256,34 @@
           "level": "advanced",
           "name": "pull ups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/pullup2.jpeg"
         },
         {
           "level": "intermediate",
           "name": "body rows",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/rows.jpeg"
         },
         {
           "level": "begginer",
           "name": "body rows",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/rows.jpeg"
         }
       ]
     },
@@ -224,19 +299,32 @@
           "level": "advanced",
           "name": "Ring pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60,
+          "image": "/images/ring_pushups.jpeg"
         },
         {
           "level": "intermediate",
           "name": "Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "begginer",
           "name": "Elevated Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         }
       ]
     },
@@ -263,19 +351,31 @@
           "level": "advanced",
           "name": "handstand pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "intermediate",
           "name": "Elevatet Pike Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "begginer",
           "name": "Pike Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         }
       ]
     },
@@ -291,19 +391,31 @@
           "level": "advanced",
           "name": "Ripg dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "intermediate",
           "name": "Dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "begginer",
           "name": "Bench dips",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         }
       ]
     },
@@ -319,69 +431,33 @@
           "level": "advanced",
           "name": "Ring pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/reardeltrows.mp4"
+          "video": "/videos/reardeltrows.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "intermediate",
           "name": "Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/swordraise.mp4"
+          "video": "/videos/swordraise.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         },
         {
           "level": "begginer",
           "name": "Elevated Pushups",
           "description": "Great option for shoulder growth and triceps depending on how you place your arms. narrower => tricep. wider => sidedelt. Don't forget to do rotator cuff correctives to avoid unnecesary injuries",
-          "video": "/videos/chinup.mp4"
+          "video": "/videos/chinup.mp4",
+          "sets": 4,
+          "reps": 8,
+          "repsDone": 0,
+          "restTime": 60
         }
       ]
-    },
-    {
-      "id": 4,
-      "name": "Spartan chopups",
-      "image": "/images/abs.jpeg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "intermediate",
-      "video": "/videos/chinup.mp4"
-    },
-    {
-      "id": 5,
-      "name": "Freak jobs",
-      "image": "/images/bicepcurls.jpeg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "intermediate",
-      "video": "/videos/swordraise.mp4"
-    },
-    {
-      "id": 6,
-      "name": "Muscle EVR",
-      "image": "/images/frontlever.jpeg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "intermediate",
-      "video": "/videos/swordraise.mp4"
-    },
-    {
-      "id": 7,
-      "name": "Connect Cutter",
-      "image": "/images/pushup.jpg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "begginer",
-      "video": "/videos/ringdip1.mp4"
-    },
-    {
-      "id": 8,
-      "name": "V executer",
-      "image": "/images/ringdips.jpg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "begginer",
-      "video": "/videos/ringdip1.mp4"
-    },
-    {
-      "id": 9,
-      "name": "Final answer",
-      "image": "/images/chest.jpeg",
-      "description": "For Hypertrophy so aim for 8 to 15+ reps at 10 rpe. If you are begginer there are alternatives that are shown in the video",
-      "level": "begginer",
-      "video": "/videos/ringdip1.mp4"
     }
   ]
 }

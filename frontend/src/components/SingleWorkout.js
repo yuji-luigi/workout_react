@@ -1,6 +1,5 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
 import DifficultyButtons from "./DifficultyButtons";
 import Clip from "./Clip";
 
@@ -22,16 +21,6 @@ const SingleWorkout = () => {
     getSingleWorkout(workout_id);
   }, [level]);
 
-  // useEffect(() => {
-  //   const switchWorkoutByLevel = async (ref) => {
-  //     const oneTypeOfWorkoutFromServer = await fetchOneTypeOfWorkout(ref);
-  //     setWorkout(oneTypeOfWorkoutFromServer);
-  //   };
-
-  //   changeWorkoutIdBylevel();
-  //   switchWorkoutByLevel(workout_id);
-  // }, [level]);
-
   const changeLevel = (difficluty) => {
     setLevel(difficluty);
   };
@@ -44,23 +33,6 @@ const SingleWorkout = () => {
       console.log(e);
     }
   };
-  // const changeWorkoutIdBylevel = () => {
-  //   switch (level) {
-  //     case "begginer":
-  //       workout_id = workout.begginer;
-  //       break;
-
-  //     case "intermediate":
-  //       workout_id = workout.intermediate;
-  //       break;
-
-  //     case "expert":
-  //       workout_id = workout.advanced;
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // };
 
   return (
     <div className="container ">

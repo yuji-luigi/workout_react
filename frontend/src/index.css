@@ -24,13 +24,28 @@
   .scroll-snap-x-mandatory {
     scroll-snap-type: x mandatory;
   }
+  .scroll-snap-y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
   .scroll-snap-y {
     scroll-snap-type: y;
   }
-  .v-screen-half {
+  .h-screen-half {
     height: 50vh;
   }
   .w-screen-half {
     width: 50vw;
+  }
+  .h-screen-80 {
+    height: 80vh;
+  }
+  .w-screen-80 {
+    width: 80vw;
+  }
+  .h-screen-70 {
+    height: 70vh;
+  }
+  .w-screen-70 {
+    width: 70vw;
   }
 }

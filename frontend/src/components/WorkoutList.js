@@ -2,7 +2,7 @@ import React from "react";
 
 import WorkoutCard from "./WorkoutCard";
 
-const WorkoutList = ({ workouts, workoutIds, level }) => {
+const WorkoutList = ({ workouts, level }) => {
   return (
     <>
       <div className="flex justify-center flex-col ">
@@ -13,7 +13,7 @@ const WorkoutList = ({ workouts, workoutIds, level }) => {
         <WorkoutCard
           key={index}
           level={level}
-          workout={workout.targetWorkout}
+          workout={workout.workoutByLevel}
           workoutIds={workout.id}
         />
       ))}

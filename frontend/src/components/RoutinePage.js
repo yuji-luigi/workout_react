@@ -14,7 +14,6 @@ const RoutinePage = () => {
   const [level, setLevel] = useState("advanced");
   const [playVideo, setPlayVideo] = useState(false);
   const [workouts, setWorkouts] = useState([]);
-  const [workoutIds, setWorkoutIds] = useState("");
 
   const { routine_id } = useParams();
   useEffect(() => {
@@ -35,7 +34,7 @@ const RoutinePage = () => {
 
   useEffect(() => {
     if (routines) {
-      // @DB routines.workouts = [{ref: 1}, ...{}] => [1, ,2 ,3]
+      // @DB routines.workouts = [{ref: 1}, ...{}] => [1, 2 ,3]
       // Then this code block is unnecessary.
       const workoutRefs = routines.workouts.map((key) => {
         return key.ref;
@@ -50,10 +49,10 @@ const RoutinePage = () => {
       const res = await fetch(`http://localhost:4000/workouts/${ref}`);
       const data = await res.json();
       const id = data.id;
-      const [targetWorkout] = data.variation_byLevel.filter((key) => {
+      const [workoutByLevel] = data.variation_byLevel.filter((key) => {
         return key.level === level;
       });
-      setWorkouts((workout) => [...workout, { targetWorkout, id }]);
+      setWorkouts((workout) => [...workout, { workoutByLevel, id }]);
     });
   };
 
@@ -61,21 +60,25 @@ const RoutinePage = () => {
     setLevel(difficluty);
   };
 
-  const startWorkout = () => {
-    setPlayVideo(!playVideo);
-  };
-
   return (
-    <div className="container">
-      <BackButton />
-      <DifficultyButtons changeLevel={changeLevel} />
-      <h1 className="uppercase mt-3">{level}</h1>
+    <>
+      <div className="container">
+        <BackButton />
+        <DifficultyButtons changeLevel={changeLevel} />
+        <h1 className="uppercase mt-3">{level}</h1>
+      </div>
+
       {playVideo ? (
         <>
-          <StartWorkout playVideo={playVideo} setPlayVideo={setPlayVideo} />
+          <StartWorkout
+            playVideo={playVideo}
+            setPlayVideo={setPlayVideo}
+            workouts={workouts}
+            level={level}
+          />
         </>
       ) : (
-        <>
+        <div className="container">
           <I
             onClick={() => setPlayVideo(!playVideo)}
             icon={faPlay}
@@ -86,11 +89,10 @@ const RoutinePage = () => {
             changeLevel={changeLevel}
             level={level}
             workouts={workouts}
-            workoutIds={workoutIds}
           />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
