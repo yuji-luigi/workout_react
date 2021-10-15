@@ -11,8 +11,7 @@ node_modules
 /coverage
 
 # production
-/src
-/public
+/build
 
 # misc
 .DS_Store

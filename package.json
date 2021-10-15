@@ -8,7 +8,7 @@
     "start": "concurrently \"npm run server\" \"node index.js\"",
     "server": "json-server --watch db.json -p 4000",
     "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\" \"nodemon index\"",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
@@ -17,5 +17,8 @@
     "concurrently": "^6.3.0",
     "express": "^4.17.1",
     "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
