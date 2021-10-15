@@ -2,10 +2,22 @@ const mnongoose = require("mongoose");
 const schema = mongoose.Schema;
 
 const RoutineSchema = new Schema({
-  name: {
+  title: {
     type: String,
+    required: true,
+  },
+  type: {
+    Type: String,
+    required: true,
+  },
+  image: {
+    Type: String,
+    required: true,
+  },
+  workouts: {
+    Type: Array,
     required: true,
   },
 });
 
-module.exports = Item = mongoose.model("item", ItemSchema);
+module.exports = Routines = mongoose.model("routine", RoutineSchema);
