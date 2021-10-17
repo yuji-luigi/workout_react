@@ -2,14 +2,14 @@
   "name": "tailwind_workout",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "node index.js",
+    "start": "node server.js",
     "server": "json-server --watch db.json -p 4000",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run frontend\" \"nodemon index\"",
-    "nodemon": "nodemon index",
+    "nodemon": "nodemon server",
     "build": "npm run build --prefix frontend",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
   },
