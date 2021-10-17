@@ -6,7 +6,7 @@ const Routine = require("../../models/Routine");
 let workoutUrl = `http://localhost:4242/api/workouts/`;
 
 if (process.env.NODE_ENV === "production") {
-  workoutUrl = `https://reactworkoutbeta.herokuapp.com/api/workouts/${ref}`;
+  workoutUrl = `https://reactworkoutbeta.herokuapp.com/api/workouts/`;
 }
 
 router.get("/:id", async (req, res) => {
