@@ -6,10 +6,8 @@
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
     "start": "node server.js",
-    "server": "json-server --watch db.json -p 4000",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run frontend\" \"nodemon index\"",
-    "nodemon": "nodemon server",
     "build": "npm run build --prefix frontend",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
   },
@@ -20,6 +18,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "json-server": "^0.16.3",
+    "mongoose": "^6.0.11",
     "node-fetch": "^2.0.0"
   },
   "devDependencies": {
