@@ -1,15 +1,19 @@
 const express = require("express");
 const router = express.Router();
 const fetch = require("node-fetch");
-
 const Workout = require("../../models/Workout");
 const Routine = require("../../models/Routine");
+let workoutUrl = `http://localhost:4242/api/workouts/`;
+
+if (process.env.NODE_ENV === "production") {
+  workoutUrl = `https://reactworkoutbeta.herokuapp.com/api/workouts/${ref}`;
+}
 
 router.get("/:id", async (req, res) => {
   const routine = await Routine.findOne({ routine_id: req.params.id });
   const pendingWorkouts = routine.workouts.map(async (ref) => {
     try {
-      const res = await fetch(`http://localhost:4242/api/workouts/${ref}`);
+      const res = await fetch(workoutUrl + ref);
       const data = await res.json();
       return data;
     } catch (e) {
