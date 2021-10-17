@@ -1,8 +1,7 @@
-// @StartWorkout.js
-// add array of reps and sets length of sets number
-// initial value of 0
-//  rest button to switch to the next index of reps
-// end of the array function that slide to next workout
+// @ mongoDB add unique ID for nested workout list!!
+// @Model/Workout.js chech the schema fields.
+
+// @ Routine page 39 targetworkout to setWorkout!!
 
 // Also add the config functionality
 // config rest time, reps and sets.

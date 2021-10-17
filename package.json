@@ -5,18 +5,22 @@
   "main": "index.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "concurrently \"npm run server\" \"node index.js\"",
+    "start": "node index.js",
     "server": "json-server --watch db.json -p 4000",
     "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\" \"nodemon index\"",
-    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "concurrently \"npm run frontend\" \"nodemon index\"",
+    "nodemon": "nodemon index",
+    "build": "npm run build --prefix frontend",
+    "heroku-postbuild": "npm install --prefix frontend"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "node-fetch": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"

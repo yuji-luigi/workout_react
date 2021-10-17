@@ -11,6 +11,7 @@ const WorkoutList = ({ workouts, level }) => {
       </div>
       {workouts.map((workout, index) => (
         <WorkoutCard
+          // @ mongoDB add unique ID for nested workout list!!
           key={index}
           level={level}
           workout={workout.workoutByLevel}

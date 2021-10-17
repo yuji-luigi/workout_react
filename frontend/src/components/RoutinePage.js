@@ -18,42 +18,61 @@ const RoutinePage = () => {
   const { routine_id } = useParams();
   useEffect(() => {
     const getRoutines = async () => {
-      const routineFromServer = await fetchRoutine();
-      setRoutines(routineFromServer);
+      const { routine } = await fetchRoutine();
+      setRoutines(routine);
     };
     getRoutines();
-  }, []);
+    return () => setWorkouts([]);
+  }, [level]);
 
   const fetchRoutine = async () => {
     const res = await fetch(
-      `http://localhost:4000/routines?routine_id=${routine_id}`
+      `/api/routines/${routine_id}`
+      // `http://localhost:4000/routines?routine_id=${routine_id}`
     );
-    const [data] = await res.json();
-    return data;
-  };
+    const { routine, workouts, workoutIds } = await res.json();
 
-  useEffect(() => {
-    if (routines) {
-      // @DB routines.workouts = [{ref: 1}, ...{}] => [1, 2 ,3]
-      // Then this code block is unnecessary.
-      const workoutRefs = routines.workouts.map((key) => {
-        return key.ref;
-      });
-      fetchAndSetWorkoutsByLevel(workoutRefs);
-    }
-    return setWorkouts([]);
-  }, [routines, level]);
-
-  const fetchAndSetWorkoutsByLevel = async (refs) => {
-    refs.forEach(async (ref) => {
-      const res = await fetch(`http://localhost:4000/workouts/${ref}`);
-      const data = await res.json();
-      const id = data.id;
-      const [workoutByLevel] = data.variation_byLevel.filter((key) => {
+    // SET WORKOUT
+    for (let i = 0; i < workouts.length; i++) {
+      const workoutsVari = workouts[i].variation_byLevel;
+      const [workoutByLevel] = workoutsVari.filter((key) => {
         return key.level === level;
       });
+      const id = workoutIds[i];
+      console.log(workoutByLevel);
       setWorkouts((workout) => [...workout, { workoutByLevel, id }]);
+    }
+    return { routine };
+  };
+
+  // useEffect(() => {
+  //   if (routines) {
+  //     const getAndSetWorkouts = async () => {
+  //       for (let i = 0; i < routines.workouts.length; i++) {
+  //         const ref = routines.workouts[i];
+  //         await fetchAndSetWorkoutsByLevel(ref);
+  //       }
+  //     };
+  // getAndSetWorkouts();
+  //   const workoutRefs = routines.workouts.forEach(async (ref) => {
+  //     await fetchAndSetWorkoutsByLevel(ref);
+  //   });
+  // }
+  // return () => setWorkouts([]);
+  // }, [routines, level]);
+
+  const fetchAndSetWorkoutsByLevel = async (ref) => {
+    const res = await fetch(
+      `/api/workouts/${ref}`
+      // `http://localhost:4000/workouts/${ref}`
+    );
+    const data = await res.json();
+    const id = await data.id;
+    console.log(id);
+    const [workoutByLevel] = await data.variation_byLevel.filter((key) => {
+      return key.level === level;
     });
+    setWorkouts((workout) => [...workout, { workoutByLevel, id }]);
   };
 
   const changeLevel = (difficluty) => {
