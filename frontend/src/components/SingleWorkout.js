@@ -26,8 +26,12 @@ const SingleWorkout = () => {
   };
   const fetchOneTypeOfWorkout = async (ref) => {
     try {
-      const res = await fetch(`http://localhost:4000/workouts?id=${ref}`);
-      const [data] = await res.json();
+      const res = await fetch(
+        `/api/workouts/${ref}`
+        // `http://localhost:4000/workouts?id=${ref}`
+      );
+      const data = await res.json();
+      console.log(data);
       return data;
     } catch (e) {
       console.log(e);
@@ -35,24 +39,18 @@ const SingleWorkout = () => {
   };
 
   return (
-    <div className="container ">
-      <button
-        onClick={() => window.history.back()}
-        className="btn absolute top-15 right-5 bg-green-200 hover:bg-green-100 "
-      >
-        Back
-      </button>
-      <DifficultyButtons changeLevel={changeLevel} />
+    <>
+      <div className=" mt-12 flex flex-col justyfy-center">
+        {workout && (
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="uppercase m-3">{workout.name}</h1>
 
-      <>
-        <div className="  flex flex-col justyfy-center">
-          <h1 className="mb-3">{workout.name}</h1>
-          <h1 className="uppercase">{workout.level}</h1>
-          <p>{workout.description}</p>
-          <Clip video={workout.video} />
-        </div>
-      </>
-    </div>
+            <p className="px-10 mb-6">{workout.description}</p>
+            <Clip video={workout.video} />
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

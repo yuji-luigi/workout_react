@@ -27,7 +27,6 @@ function App() {
 
   // Here this is good use case of typescript!!
 
-  console.log(width);
   const weeklyRoutines = [
     {
       id: 1,
