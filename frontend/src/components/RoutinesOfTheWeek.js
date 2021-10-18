@@ -15,10 +15,17 @@ const RoutinesOfTheWeek = ({ weeklyRoutines, header }) => {
           <h4 className=" pb-1 w-3/5 mx-auto  font-bold text-xl text-white	">
             {header}
           </h4>
-          <div className="flex overflow-x-scroll w-full overflow-visible scroll-snap-x-mandatory  pb-10">
+          <div className="flex overflow-x-scroll w-12/12 w-full overflow-visible scroll-snap-x-mandatory  pb-10">
+            <div className=" flex-none mx-auto w-10/12 text-center ">
+              <div className="w-10/12 "></div>
+            </div>
             {weeklyRoutines.map((routine, index) => (
               <RoutineOfTheWeek key={index} routine={routine} />
             ))}
+
+            <div className=" flex-none mx-auto w-10/12 text-center ">
+              <div className="w-10/12 "></div>
+            </div>
           </div>
         </div>
       </div>

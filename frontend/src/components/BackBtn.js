@@ -1,8 +1,10 @@
-const BackButton = ({ clickEvent }) => {
+import React from "react";
+
+const BackBtn = (onclick, arg2) => {
   return (
     <div className="flex justify-end">
       <button
-        onClick={() => clickEvent()}
+        onClick={() => onclick(arg2)}
         className="btn absolute  right-5 bg-gray-200 hover:bg-gray-100 "
       >
         Back
@@ -11,4 +13,4 @@ const BackButton = ({ clickEvent }) => {
   );
 };
 
-export default BackButton;
+export default BackBtn;

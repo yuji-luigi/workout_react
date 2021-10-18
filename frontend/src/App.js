@@ -137,7 +137,6 @@ function App() {
               <Route path="/routines/" exact>
                 <CategoriesPage />
               </Route>
-              )
             </>
           ) : (
             <div className="flex flex-col justify-center items-center h-screen">

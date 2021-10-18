@@ -26,10 +26,7 @@ const RoutinePage = () => {
   }, [level]);
 
   const fetchRoutine = async () => {
-    const res = await fetch(
-      `/api/routines/${routine_id}`
-      // `http://localhost:4000/routines?routine_id=${routine_id}`
-    );
+    const res = await fetch(`/api/routines/${routine_id}`);
     const { routine, workouts, workoutIds } = await res.json();
 
     // SET WORKOUT
@@ -39,27 +36,10 @@ const RoutinePage = () => {
         return key.level === level;
       });
       const id = workoutIds[i];
-      console.log(workoutByLevel);
       setWorkouts((workout) => [...workout, { workoutByLevel, id }]);
     }
     return { routine };
   };
-
-  // useEffect(() => {
-  //   if (routines) {
-  //     const getAndSetWorkouts = async () => {
-  //       for (let i = 0; i < routines.workouts.length; i++) {
-  //         const ref = routines.workouts[i];
-  //         await fetchAndSetWorkoutsByLevel(ref);
-  //       }
-  //     };
-  // getAndSetWorkouts();
-  //   const workoutRefs = routines.workouts.forEach(async (ref) => {
-  //     await fetchAndSetWorkoutsByLevel(ref);
-  //   });
-  // }
-  // return () => setWorkouts([]);
-  // }, [routines, level]);
 
   const fetchAndSetWorkoutsByLevel = async (ref) => {
     const res = await fetch(
@@ -81,8 +61,8 @@ const RoutinePage = () => {
 
   return (
     <>
+      <BackButton clickEvent={() => window.history.back()} />
       <div className="container">
-        <BackButton />
         <DifficultyButtons changeLevel={changeLevel} />
         <h1 className="uppercase mt-3">{level}</h1>
       </div>

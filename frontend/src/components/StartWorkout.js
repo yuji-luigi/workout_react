@@ -14,6 +14,8 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   const [currentStatus, setCurrentStatus] = useState("");
   const [render, toggleRender] = useState(true);
   const [reps, setReps] = useState(0);
+  let [restTime, setRestTime] = useState(10);
+  const [onRest, toggleOnRest] = useState(false);
   useEffect(() => {
     const scrollElements = document.querySelectorAll(".routine-videos");
     setJsScrolls(scrollElements);
@@ -49,37 +51,52 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   };
 
   const restClicked = () => {
+    const btn = document.getElementById("restbtn");
+    btn.disabled = true;
+    toggleOnRest(!onRest);
+    const alarm = new Audio("/sounds/simple.wav");
+    const timerActivate = setInterval(() => {
+      setRestTime(--restTime);
+      if (restTime === 3) {
+        alarm.play();
+      }
+      if (restTime === 0) {
+        btn.disabled = false;
+        clearInterval(timerActivate);
+        setTimeout(() => {
+          setRestTime(10);
+        }, 1000);
+      }
+    }, 1000);
     setReps(0);
+    const index = getSetIndex();
+    setCurrentSetIndex(index);
+    if (currentStatus.finished === true) return;
+    currentSetStatusSetter(index);
+  };
+
+  const getSetIndex = () => {
     const finishedArray = currentStatus.reps.map((key) => {
       return key.finished;
     });
     const index = finishedArray.indexOf(false) + 1;
-    setCurrentSetIndex(index);
+    return index;
+  };
 
-    if (currentStatus.finished === true) return;
+  const currentSetStatusSetter = (index) => {
     if (currentSetIndex >= currentStatus.reps.length - 1) {
-      console.log(currentSetIndex);
-      currentStatus.reps[currentSetIndex - 1].finished = true;
+      currentStatus.reps[currentSetIndex].finished = true;
       currentStatus.finished = true;
       return;
     } else {
       currentStatus.reps[index - 1].finished = true;
-      console.log(currentStatus);
       setCurrentStatus(currentStatus);
     }
   };
 
-  const currentSetIndexSetter = () => {
-    // const finishedArray = currentStatus.reps.map((key) => {
-    //   return key.finished;
-    // });
-    // console.log(finishedArray);
-    // console.log(finishedArray.indexOf(false));
-  };
-
-  const repsClicked = () => {
+  const repsClicked = (num) => {
     if (currentStatus.finished === false) {
-      setReps(reps + 1);
+      setReps(reps + num);
     }
   };
 
@@ -91,6 +108,10 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
     setWorkoutNow(workouts[indexWorkoutNow].workoutByLevel);
     setCurrentStatus(statusArray[indexWorkoutNow]);
   }, [indexWorkoutNow]);
+
+  useEffect(() => {
+    currentStatus && setReps(currentStatus.reps[currentSetIndex].count);
+  }, [currentStatus, restTime]);
 
   const getCorrectIndexOfSetNow = () => {
     const finishedArray = currentStatus.reps.map((key) => {
@@ -139,12 +160,14 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
         setPlayVideo={setPlayVideo}
         playVideo={playVideo}
         statusArray={statusArray}
+        setIndex={currentSetIndex}
         currentStatus={currentStatus}
-        repsClicked={() => repsClicked()}
+        restTime={restTime}
+        repsClicked={(num) => repsClicked(num)}
         restClicked={() => restClicked()}
       />
       <div
-        className="container overflow-y-scroll h-screen-80 scroll-snap-y-mandatory"
+        className="container overflow-y-scroll h-screen-80 scroll-snap-y-proximity"
         onScroll={() => clipsHeightsSetter(jsScrolls)}
       >
         {workouts.map((workout, index) => (
