@@ -11,11 +11,11 @@ const RoutinesOfTheWeek = ({ weeklyRoutines, header }) => {
           Weekly Programs
         </h4>
 
-        <div className="container bg-gray-100 w-10/12 bg-opacity-30 rounded-lg">
+        <div className="container bg-gray-100 w-screen bg-opacity-30 rounded-lg">
           <h4 className=" pb-1 w-3/5 mx-auto  font-bold text-xl text-white	">
             {header}
           </h4>
-          <div className="flex overflow-x-scroll w-12/12 w-full overflow-visible scroll-snap-x-mandatory  pb-10">
+          <div className="flex overflow-x-scroll  w-full overflow-visible scroll-snap-x-mandatory  pb-10">
             <div className=" flex-none mx-auto w-10/12 text-center ">
               <div className="w-10/12 "></div>
             </div>
