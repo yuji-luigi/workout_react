@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import DifficultyButtons from "./DifficultyButtons";
 import Clip from "./Clip";
+import BackButton from "./BackButton";
 
 const SingleWorkout = () => {
   let { workout_id, levelSelected } = useParams();
@@ -40,6 +41,7 @@ const SingleWorkout = () => {
 
   return (
     <>
+      <BackButton clickEvent={() => window.history.back()} />
       <div className=" mt-12 flex flex-col justyfy-center">
         {workout && (
           <div className="flex flex-col justify-center items-center">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ClipRoutine from "./ClipRoutine";
 
 const RoutineVideo = ({ level, workout, workoutIds }) => {

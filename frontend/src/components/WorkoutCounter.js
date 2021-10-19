@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import BackButton from "./BackButton";
 
 const WorkoutCounter = ({
@@ -11,22 +11,6 @@ const WorkoutCounter = ({
   currentStatus,
   setIndex,
 }) => {
-  let [time, setTime] = useState(5);
-  const alert = (msg) => {
-    window.alert(msg);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (time === 0) {
-        clearInterval(interval);
-        // alert("time up!!");
-      }
-      time >= 0 && setTime(time--);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
   const onRest = () => {
     restClicked();
   };

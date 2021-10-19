@@ -28,13 +28,13 @@ const DifficultyButtons = ({ changeLevel }) => {
         intermediate
       </button>
       <button
-        className="btn mx-2 font-bold bg-white hover:bg-gray-100"
+        className="btn mx-2 font-bold bg-white hover:bg-gray-100 bg-yellow-400 hover:bg-yellow-300"
         onClick={(e) => {
           changeLevel("advanced");
           changeColor(e);
         }}
       >
-        Expert
+        Advanced
       </button>
     </div>
   );

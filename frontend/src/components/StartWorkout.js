@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import WorkoutCounter from "./WorkoutCounter";
 import RoutineVideo from "./RoutineVideo";
-
+import SettingRoutine from "./SettingRoutine";
 const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   const [jsScrolls, setJsScrolls] = useState([]);
   const [scrollsHeights, setScrollsHeights] = useState([]);
@@ -16,16 +16,32 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   const [reps, setReps] = useState(0);
   let [restTime, setRestTime] = useState(10);
   const [onRest, toggleOnRest] = useState(false);
+
   useEffect(() => {
+    const getWorkoutStatuses = () => {
+      const statuses = [];
+      for (let i = 0; i < workouts.length; i++) {
+        const workout = {};
+        workout.name = workouts[i].workoutByLevel.name;
+        workout.finished = false;
+        workout.reps = [];
+        for (let j = 0; j < workouts[i].workoutByLevel.sets; j++) {
+          workout.reps.push({ count: 0, finished: false });
+        }
+        statuses.push(workout);
+      }
+      return statuses;
+    };
+
     const scrollElements = document.querySelectorAll(".routine-videos");
     setJsScrolls(scrollElements);
     clipsHeightsSetter(scrollElements);
     setStatusArray(getWorkoutStatuses());
-  }, []);
+  }, [workouts]);
 
   useEffect(() => {
     setCurrentStatus(statusArray[indexWorkoutNow]);
-  }, [statusArray]);
+  }, [statusArray, indexWorkoutNow]);
 
   const clipsHeightsSetter = (el) => {
     setScrollsHeights([]);
@@ -33,21 +49,6 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
       const height = el.getBoundingClientRect().top;
       setScrollsHeights((array) => [...array, height]);
     });
-  };
-
-  const getWorkoutStatuses = () => {
-    const statuses = [];
-    for (let i = 0; i < workouts.length; i++) {
-      const workout = {};
-      workout.name = workouts[i].workoutByLevel.name;
-      workout.finished = false;
-      workout.reps = [];
-      for (let j = 0; j < workouts[i].workoutByLevel.sets; j++) {
-        workout.reps.push({ count: 0, finished: false });
-      }
-      statuses.push(workout);
-    }
-    return statuses;
   };
 
   const restClicked = () => {
@@ -101,17 +102,27 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   };
 
   useEffect(() => {
+    const getsetWorkoutNowIndex = () => {
+      const scrollsInSight = scrollsHeights.map((el) => {
+        return el >= 50 && el <= 800;
+      });
+      let index = scrollsInSight.indexOf(true);
+      index = index === -1 ? 0 : index;
+      if (indexWorkoutNow !== index) {
+        setIndexWorkoutNow(index);
+      }
+    };
     getsetWorkoutNowIndex();
-  }, [scrollsHeights]);
+  }, [scrollsHeights, indexWorkoutNow]);
 
   useEffect(() => {
     setWorkoutNow(workouts[indexWorkoutNow].workoutByLevel);
     setCurrentStatus(statusArray[indexWorkoutNow]);
-  }, [indexWorkoutNow]);
+  }, [indexWorkoutNow, statusArray, workouts]);
 
   useEffect(() => {
     currentStatus && setReps(currentStatus.reps[currentSetIndex].count);
-  }, [currentStatus, restTime]);
+  }, [currentStatus, restTime, currentSetIndex]);
 
   const getCorrectIndexOfSetNow = () => {
     const finishedArray = currentStatus.reps.map((key) => {
@@ -141,19 +152,17 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
       toggleRender(!render);
     }
   }, [reps]);
-  const getsetWorkoutNowIndex = () => {
-    const scrollsInSight = scrollsHeights.map((el) => {
-      return el >= 50 && el <= 800;
-    });
-    let index = scrollsInSight.indexOf(true);
-    index = index === -1 ? 0 : index;
-    if (indexWorkoutNow !== index) {
-      setIndexWorkoutNow(index);
-    }
+
+  const settingClicked = () => {
+    console.log(statusArray);
   };
 
   return (
     <>
+      <SettingRoutine
+        statusArray={statusArray}
+        clickEvent={() => settingClicked()}
+      />
       <WorkoutCounter
         workout={workoutNow}
         indexWorkoutNow={indexWorkoutNow}

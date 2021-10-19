@@ -1,9 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 
 const ClipRoutine = ({ video }) => {
-  const videoRef = useRef();
-  const [height, setHeight] = useState(0);
-
   return (
     <>
       {/* <div className="h-screen-70" onScroll={() => console.log("scrooooll")}> */}
