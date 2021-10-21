@@ -4,12 +4,22 @@ import { useState, useEffect } from "react";
 import WorkoutCounter from "./WorkoutCounter";
 import RoutineVideo from "./RoutineVideo";
 import SettingRoutine from "./SettingRoutine";
-const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
+
+import { FontAwesomeIcon as I } from "@fortawesome/react-fontawesome";
+import { faCogs } from "@fortawesome/free-solid-svg-icons";
+
+const StartWorkout = ({
+  setPlayVideo,
+  playVideo,
+  workouts,
+  level,
+  statusArray,
+}) => {
   const [jsScrolls, setJsScrolls] = useState([]);
   const [scrollsHeights, setScrollsHeights] = useState([]);
   const [indexWorkoutNow, setIndexWorkoutNow] = useState(0);
   const [workoutNow, setWorkoutNow] = useState("");
-  const [statusArray, setStatusArray] = useState([]);
+  // const [statusArray, setStatusArray] = useState([]);
   const [currentSetIndex, setCurrentSetIndex] = useState(0);
   const [currentStatus, setCurrentStatus] = useState("");
   const [render, toggleRender] = useState(true);
@@ -18,25 +28,25 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
   const [onRest, toggleOnRest] = useState(false);
 
   useEffect(() => {
-    const getWorkoutStatuses = () => {
-      const statuses = [];
-      for (let i = 0; i < workouts.length; i++) {
-        const workout = {};
-        workout.name = workouts[i].workoutByLevel.name;
-        workout.finished = false;
-        workout.reps = [];
-        for (let j = 0; j < workouts[i].workoutByLevel.sets; j++) {
-          workout.reps.push({ count: 0, finished: false });
-        }
-        statuses.push(workout);
-      }
-      return statuses;
-    };
+    // const getWorkoutStatuses = () => {
+    //   const statuses = [];
+    //   for (let i = 0; i < workouts.length; i++) {
+    //     const workout = {};
+    //     workout.name = workouts[i].workoutByLevel.name;
+    //     workout.finished = false;
+    //     workout.reps = [];
+    //     for (let j = 0; j < workouts[i].workoutByLevel.sets; j++) {
+    //       workout.reps.push({ count: 0, finished: false });
+    //     }
+    //     statuses.push(workout);
+    //   }
+    //   return statuses;
+    // };
 
     const scrollElements = document.querySelectorAll(".routine-videos");
     setJsScrolls(scrollElements);
     clipsHeightsSetter(scrollElements);
-    setStatusArray(getWorkoutStatuses());
+    // setStatusArray(getWorkoutStatuses());
   }, [workouts]);
 
   useEffect(() => {
@@ -159,10 +169,6 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
 
   return (
     <>
-      <SettingRoutine
-        statusArray={statusArray}
-        clickEvent={() => settingClicked()}
-      />
       <WorkoutCounter
         workout={workoutNow}
         indexWorkoutNow={indexWorkoutNow}
@@ -179,6 +185,11 @@ const StartWorkout = ({ setPlayVideo, playVideo, workouts, level }) => {
         className="container overflow-y-scroll h-screen-80 scroll-snap-y-proximity"
         onScroll={() => clipsHeightsSetter(jsScrolls)}
       >
+        <div className="flex absolute t-30 ">
+          <button className="btn bg-gray-200 text-lg hover:bg-gray-100">
+            <I onClick={() => workouts} icon={faCogs} />
+          </button>
+        </div>
         {workouts.map((workout, index) => (
           <RoutineVideo
             key={index}

@@ -9,15 +9,17 @@ const WorkoutList = ({ workouts, level }) => {
         <h1 className="font-bold text-lg mx">{workouts.title}</h1>
         <h4>Start Workout!!</h4>
       </div>
-      {workouts.map((workout, index) => (
-        <WorkoutCard
-          // @ mongoDB add unique ID for nested workout list!!
-          key={index}
-          level={level}
-          workout={workout.workoutByLevel}
-          workoutIds={workout.id}
-        />
-      ))}
+      <div className="flex mx-auto flex-col justify-center items-center">
+        {workouts.map((workout, index) => (
+          <WorkoutCard
+            key={index}
+            index={index}
+            level={level}
+            workout={workout.workoutByLevel}
+            workoutIds={workout.id}
+          />
+        ))}
+      </div>
     </>
   );
 };

@@ -105,45 +105,45 @@ function App() {
   };
   return (
     <Router>
-      <div className="bg-green-300">
+      <div className="bg-green-300 h-screen">
         <Header />
         <div className="mt-10">
-          {width < 780 ? (
-            <>
-              <Route path="/" exact>
-                <RoutinesOfTheWeek weeklyRoutines={weeklyRoutines} />
-                <div className="flex flex-col text-dark bg-yellow-200 mt-2 p-3 shadow-lg">
-                  <div className="flex content-center justify-between">
-                    <h2 className="font-bold text-xl mx-3">
-                      Search By Categories!
-                    </h2>
-                    <h1 className="mr-9 font-bold p-2 rounded-full cursor-pointer ">
-                      Show more
-                    </h1>
-                  </div>
-                  <div className="flex overflow-x-scroll scroll-snap-x-mandatory">
-                    {byCategories.map((category, index) => (
-                      <CategoriesOverview key={index} category={category} />
-                    ))}
-                  </div>
+          {/* {width < 780 ? ( */}
+          <>
+            <Route path="/" exact>
+              <RoutinesOfTheWeek weeklyRoutines={weeklyRoutines} />
+              <div className="flex flex-col text-dark bg-yellow-200 mt-2 p-3 shadow-lg">
+                <div className="flex content-center justify-between">
+                  <h2 className="font-bold text-xl mx-3">
+                    Search By Categories!
+                  </h2>
+                  <h1 className="mr-9 font-bold p-2 rounded-full cursor-pointer ">
+                    Show more
+                  </h1>
                 </div>
-              </Route>
-              <Route path="/routines/:routine_id" exact>
-                <RoutinePage />
-              </Route>
-              <Route path="/workout/:workout_id/:levelSelected" exact>
-                <SingleWorkout />
-              </Route>
-              <Route path="/routines/" exact>
-                <CategoriesPage />
-              </Route>
-            </>
-          ) : (
+                <div className="flex overflow-x-scroll scroll-snap-x-mandatory">
+                  {byCategories.map((category, index) => (
+                    <CategoriesOverview key={index} category={category} />
+                  ))}
+                </div>
+              </div>
+            </Route>
+            <Route path="/routines/:routine_id" exact>
+              <RoutinePage />
+            </Route>
+            <Route path="/workout/:workout_id/:levelSelected" exact>
+              <SingleWorkout />
+            </Route>
+            <Route path="/routines/" exact>
+              <CategoriesPage />
+            </Route>
+          </>
+          {/* ) : (
             <div className="flex flex-col justify-center items-center h-screen">
               <h1>Please make the screen smaller...</h1>
               <h1>This page is optimised for small screens.</h1>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </Router>

@@ -7,14 +7,18 @@ import WorkoutList from "./WorkoutList";
 import BackButton from "./BackButton";
 import { FontAwesomeIcon as I } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faCogs } from "@fortawesome/free-solid-svg-icons";
 import StartWorkout from "./StartWorkout";
 import SettingRoutine from "./SettingRoutine";
+import SettingList from "./SettingList";
 
 const RoutinePage = () => {
   const [routines, setRoutines] = useState("");
   const [level, setLevel] = useState("advanced");
   const [playVideo, setPlayVideo] = useState(false);
   const [workouts, setWorkouts] = useState([]);
+  const [statusArray, setStatusArray] = useState([]);
+  const [settingOn, toggleSetting] = useState(false);
 
   const { routine_id } = useParams();
   useEffect(() => {
@@ -41,39 +45,58 @@ const RoutinePage = () => {
     return () => setWorkouts([]);
   }, [level, routine_id]);
 
-  // const fetchAndSetWorkoutsByLevel = async (ref) => {
-  //   const res = await fetch(
-  //     `/api/workouts/${ref}`
-  //     // `http://localhost:4000/workouts/${ref}`
-  //   );
-  //   const data = await res.json();
-  //   const id = await data.id;
-  //   console.log(id);
-  //   const [workoutByLevel] = await data.variation_byLevel.filter((key) => {
-  //     return key.level === level;
-  //   });
-  //   setWorkouts((workout) => [...workout, { workoutByLevel, id }]);
-  // };
+  useEffect(() => {
+    const getWorkoutStatuses = () => {
+      const statuses = [];
+      for (let i = 0; i < workouts.length; i++) {
+        const workout = {};
+        workout.name = workouts[i].workoutByLevel.name;
+        workout.finished = false;
+        workout.goalReps = "(Not set)";
+        workout.id = i;
+        workout.reps = [];
+        for (let j = 0; j < workouts[i].workoutByLevel.sets; j++) {
+          workout.reps.push({ count: 0, finished: false });
+        }
+        statuses.push(workout);
+      }
+      return statuses;
+    };
+    setStatusArray(getWorkoutStatuses());
+  }, [workouts]);
 
   const changeLevel = (difficluty) => {
     setLevel(difficluty);
   };
 
-  const settingClicked = () => {
-    console.log("Setting clicked!");
+  const onClick = () => {
+    toggleSetting(!settingOn);
   };
 
   return (
     <>
-      <BackButton clickEvent={() => window.history.back()} />
+      {playVideo ? (
+        <BackButton clickEvent={() => setPlayVideo(!playVideo)} />
+      ) : (
+        <BackButton clickEvent={() => window.history.back()} />
+      )}
+
       <div className="container">
         <DifficultyButtons changeLevel={changeLevel} />
         <h1 className="uppercase mt-3">{level}</h1>
       </div>
+      <button
+        onClick={() => onClick()}
+        className="btn top-20 bg-green-300 text-2xl rounded-full hover:bg-green-200"
+      >
+        <I icon={faCogs} />
+      </button>
+      {settingOn && <SettingList statusArray={statusArray} />}
       {playVideo ? (
         <>
           <StartWorkout
             playVideo={playVideo}
+            statusArray={statusArray}
             setPlayVideo={setPlayVideo}
             workouts={workouts}
             level={level}
